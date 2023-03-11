@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 子绝父相 -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .father {
+            width: 400px;
+            height: 400px;
+            background-color: gray;
+            position: relative;
+        }
+        .son {
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="father">
+        你好
+        <div class="son">
+            你好
+        </div>
+    </div>
+</body>
+</html>

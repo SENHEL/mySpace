@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My first web</title>
+        <style>
+            /*标签选择器
+            选择标签，不管嵌套多深都能找到
+            */
+
+            /*类选择器
+            选择类 点开头
+            class = ""*/
+
+            /*id选择器
+            一次只能选择一个对象，是唯一的的
+            #开头*/
+
+            /*通配符选择器
+            星号：*
+            无差别攻击，全部改变  */
+
+            /*并集选择器
+            逗号，两边接两个选择器,或者多个
+            */
+
+            /*后代选择器
+            如放在div盒子中的标签，表示为div p ，这种情况下，只有盒子中的标签
+            会被选中，当然，隔代也可以被选中
+            */
+            /* 选择器{
+                属性名1：属性值：
+                属性名2：属性值：
+            } */
+            .abc,.second {
+                color: rgb(0, 0, 0);
+            }
+            /* .second {/*类选择器
+                color: rgb(236, 255, 127);
+            } */
+            h2 {/*标签选择器*/
+                color: darkgreen;
+            }
+            #name {/*id选择器*/
+                
+                color: rgb(128, 39, 216);
+            }
+            .apex {
+                text-align: center;
+            }
+            /* div p {
+                color: blue;
+            } */
+            .ziti {
+                font-weight: 300;
+            }
+            .style1 {
+                font-style: oblique;
+            }
+            .family {
+                font-family: monospace;
+            }
+            .offLine {
+                text-decoration: none;
+            }
+            body {
+                background-image: url(./111/tu.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            a:hover {
+                color: greenyellow;
+            }
+            .ty:hover {
+                color: red;
+            }
+    /*一个id能不能用于多个标签
+    
+    
+    
+    
+    */
+        </style>
+    </head>
+    <body>
+        <h1 class="second">段落</h1>
+            <p class="abc apex">这是一个段落</p><!--一个标签可以有多个类名，但是只能有一个id-->
+            <p class="second">这是一个<b>段落</b></p>
+            <p id="name">这是一个<s>段落</s></p>
+            <p>这是一个<del>段落</del></p>
+            <p>这是一个<i>段落</i></p>
+            <P>这是一个<ins>段落</ins></P>
+            <p>这是一个<em>段落</em></p>
+            <div>
+                <div>
+                    <p>
+                    这是一个在div盒子中的段落
+                    </p>
+                </div>
+            </div>
+        <h2>链接</h2>
+            <a class="offLine ty" href="https://www.bilibili.com" target="_blank">看看b站</a>
+            <br>
+            <a class="offLine" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2pseCssJPUocE8WHCHCJPdRPNgKblsA7jEBC2t4Gx_A&s" target="_blank">是ikun就点击</a>
+            <br>
+            <a class="offLine" href="https://www.bilibili.com/video/BV1J24y187Bm/?spm_id_from=333.1007.tianma.1-1-1.click" target="_blank">点我学awp</a>
+            <br>
+            <a class="offLine" href="#">点我跳转的顶部</a>
+            <!--#表示跳转到顶部-->
+        <h3>表格</h3>
+            <table border="1">
+                <tr>
+                    <th>第一行第一列</th>
+                    <th>第一行第二列</th>
+                    <th>第一行第三列</th>
+                </tr>
+                <tr>
+                    <th>第二行第一列</th>
+                    <th>第二行第二列</th>
+                    <th>第二行第三列</th>
+                </tr>
+            </table>
+        <h4>图片</h4>
+            <p>一张截图（在同一个文件夹）</p>
+            <img title="我的代码" src="./屏幕截图_20221031_104653.png" 
+            alt="一张图片(没加载出来)" width="200">
+            <!--width和heigh两个中只写一个会等比例缩放-->
+            <!--title表示把鼠标放在图片上显示的文字-->
+            <!--alt表示无法打开图片显示的文字-->
+
+            <p>另一张截图</p>
+            <img src="./111/屏幕截图_20221031_104653.png" alt="一张图片(没加载出来)">
+
+            <p>b站上的照片1</p>
+            <img src="https://i1.hdslb.com/bfs/archive/d7269e74b28e375b9944b910ef13f8f03a400571.jpg@672w_378h_1c_!web-home-common-cover.webp"
+             alt="" width="200">
+
+            <p>b站上的图片2</p>
+            <img src="https://i1.hdslb.com/bfs/archive/75998f4981a76469ce2115bf7e5aa2257c343dee.jpg@672w_378h_1c_!web-home-common-cover.webp"
+             alt="" width="200">
+
+            <p>必须品</p>
+            <img src="./111/-260a27d9581e5f37.gif" alt="打不开图片的不是真ikun" width="200">
+        <h5>列表</h5>
+            <ul>
+                <!--无序列表-->
+                <li>第一项<br><p>111</p></li>
+                <li>第二项</li>
+                <li>第三项</li>
+            </ul>
+            <br>
+            <br>
+            <br>
+            <ol>
+                <!--有序列表-->
+                <li>一个</li>
+                <li>两个</li>
+            </ol>
+        <h6>这是第六个标题</h6>
+        <div>
+            <a href="./屏幕截图_20221031_104653.png" target="_blank">截图</a>
+        </div>
+        <!--div相当于一个盒子，装进其他标签-->
+        <span>
+            <a href="./屏幕截图_20221031_104653.png" target="_blank">另一个截图</a>
+        </span>
+        <a href="#">点我跳转的顶部</a>
+        <p>这是一个<strong>空&nbsp;格</strong></p>
+
+        <div>
+            <p class="ziti">
+                这里在测试粗细
+            </p>
+        </div>
+
+        <div>
+            <p class="style1">
+                这里再测试style
+            </p>
+        </div>
+
+        <div>
+            <p class="family">
+                这里再测试字体
+            </p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>微信，是一个生活方式</title>
+    <style>
+        .ghd_first {
+            position: relative;
+            /* top: -100px; */
+            margin: 0;
+            padding: 0;
+            background-image: url(./111/微信背景图.png);
+            background-position: -2265px -5150px;
+            height: 950px;
+            justify-content: center;
+            background-repeat: no-repeat;
+            display: flex;
+            /* flex-direction: column; */
+        }
+
+        body {
+            /* display: flex; */
+            margin: 0;
+            padding: 0;
+            background-color: rgb(247, 247, 247);
+        }
+
+        .ghd_jt {
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            /* border: solid blue; */
+            width: 230px;
+            margin-top: 30px;
+            margin-right: 45px;
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.65);
+            margin-left: auto;
+        }
+
+        .ghd_wechat_lead {
+            height: 100px;
+            display: flex;
+            /* border: solid red; */
+            margin-left: auto;
+        }
+
+        .ghd_wechat_logo {
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(./111/微信logo.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            height: 71px;
+            width: 227px;
+            /* border: solid black; */
+            margin-top: 55px;
+            position: absolute;
+            top: 100px;
+        }
+
+        .ghd_line {
+            position: absolute;
+            height: 2px;
+            width: 485px;
+            justify-content: center;
+            /* left: 33.3%; */
+            top: 260px;
+            margin-bottom: 50px;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .myList {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            margin-top: 10px;
+            font-size: 21px;
+            font-weight: 300;
+            /* border: solid black; */
+            margin-right: auto;
+        }
+
+        .list {
+            /* width: 485px; */
+            width: auto;
+            position: absolute;
+            justify-content: center;
+            /* left: 33.4%; */
+            top: 290px;
+            /* border: solid red; */
+            display: flex;
+            /* align-items: center; */
+        }
+
+        .date {
+            display: inline-block;
+            margin: 0;
+            margin-left: auto;
+            margin-top: 10px;
+            color: white;
+            font-size: 21px;
+            font-weight: 300;
+            /* border: solid blue; */
+        }
+
+        .one {
+            /* display: flex; */
+            /* border: solid black; */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .two {
+            /* border: solid rebeccapurple; */
+            margin-left: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .plus {
+            color: rgba(240, 248, 255, 0);
+        }
+
+        .space {
+            width: 30px;
+        }
+
+        .inside {
+            background-color: rgba(57, 180, 114);
+            margin: 15px;
+            display: block;
+            height: 120px;
+            width: 120px;
+            border-radius: 60px;
+            /* border: solid black; */
+        }
+
+        .yuan {
+            top: 500px;
+            width: auto;
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            /* border: solid red; */
+            justify-content: space-between;
+        }
+
+        .i1 {
+            background-color: rgb(57, 180, 114);
+            background-image: url(./111/wechat/android.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: 23px 30px;
+        }
+
+        .i1:hover {
+            background-color: rgb(74, 186, 126);
+            background-image: url(./111/wechat/androidb.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: 23px 30px;
+        }
+
+        .i2 {
+            background-color: rgb(57, 180, 114);
+            background-image: url(./111/wechat/ios.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: 42px 20px;
+        }
+
+        .i3 {
+            background-image: url(./111/wechat/macOS.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: 30px 20px;
+        }
+
+        .i4 {
+            background-image: url(./111/wechat/windows.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: 20px 25px;
+        }
+
+        .i4:hover {
+            background-color: rgb(74, 186, 126);
+            background-image: url(./111/wechat/windowsb.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: 20px 25px;
+        }
+
+        .i5 {
+            background-image: url(./111/wechat/文件传输助手网页版.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: 7px 24px;
+            background-color: rgb(57, 180, 114);
+        }
+
+        .square {
+            position: absolute;
+            top: 700px;
+            display: block;
+            /* border: solid black; */
+            display: flex;
+            justify-content: center;
+        }
+
+        .in {
+            /* border: solid red; */
+            display: block;
+            justify-content: center;
+        }
+
+        .n1 {
+            background-image: url(./111/wechat/儿童手表版.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-color: rgb(57, 180, 114);
+            background-position: 27px 8px;
+            border-radius: 10px;
+            width: 200px;
+            height: 50px;
+        }
+
+        .n2 {
+            background-image: url(./111/wechat/车载版.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-color: rgb(57, 180, 114);
+            background-position: 44px 11px;
+            border-radius: 10px;
+            width: 200px;
+            height: 50px;
+        }
+
+        .blank {
+            width: 40px;
+        }
+
+        .ghd_second {
+            width: 1000px;
+            height: 200px;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            position: relative;
+            margin: 0 auto;
+            background-color: rgb(247, 247, 247);
+            justify-content: space-between;
+            /* border: solid black; */
+            margin-bottom: 30px;
+        }
+
+        .part1 {
+            background-color: rgb(255, 255, 255);
+            margin: 0;
+            padding: 0;
+            /* border: solid red; */
+            width: 210px;
+            height: 196px;
+            border-radius: 20px;
+        }
+
+        .p01 {
+            background-image: url(./111/wechat/list/微信支付.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center;
+        }
+
+        .p02 {
+            background-image: url(./111/wechat/list/公众号.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center;
+        }
+
+        .p03 {
+            background-image: url(./111/wechat/list/小程序.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center;
+        }
+
+        .p04 {
+            background-image: url(./111/wechat/list/视频号助手.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center;
+        }
+
+        .p05 {
+            background-image: url(./111/wechat/list/小游戏.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center;
+        }
+
+        .p06 {
+            background-image: url(./111/wechat/list/小商店.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center;
+        }
+
+        .p07 {
+            background-image: url(./111/wechat/list/表情开放平台.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center;
+        }
+
+        .p08 {
+            background-image: url(./111/wechat/list/搜一搜开放平台.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center;
+        }
+
+        .p09 {
+            background-image: url(./111/wechat/list/红包封面开放平台.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center;
+        }
+
+        .p10 {
+            background-image: url(./111/wechat/list/对话开放平台.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center;
+        }
+
+        .p11 {
+            background-image: url(./111/wechat/list/开放社区.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center;
+        }
+
+        .p12 {
+            background-image: url(./111/wechat/list/服务市场.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center;
+        }
+
+        .p13 {
+            background-image: url(./111/wechat/list/企业微信.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center;
+        }
+
+        .p14 {
+            background-image: url(./111/wechat/list/微信学堂.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center;
+        }
+
+        .p15 {
+            background-image: url(./111/wechat/list/官方设计资源.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center;
+        }
+
+        .p16 {
+            background-image: url(./111/wechat/list/开放平台.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center;
+        }
+
+        .p17 {
+            background-image: url(./111/wechat/list/硬件平台.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center;
+        }
+
+        .p18 {
+            background-image: url(./111/wechat/list/微信广告.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center;
+        }
+
+        .p19 {
+            background-image: url(./111/wechat/list/官方文档.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center;
+        }
+
+        .p20 {
+            background-color: rgb(247, 247, 247);
+        }
+
+        .t01 {
+            margin: 0;
+            padding: 0;
+            /* border: solid black; */
+            display: inline-block;
+            text-align: center;
+            font-weight: 200;
+            font-size: small;
+            text-decoration: none;
+            color: black;
+        }
+
+        .ghd_third {
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            /* border: solid red; */
+            margin: 0 auto;
+            justify-content: center;
+            margin-top: 200px;
+        }
+
+        .ghd_fourth {
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+
+        .beian {
+            font-size: x-small;
+            text-align: center;
+            font-weight: 200;
+            text-decoration: none;
+            color: gray;
+        }
+
+        .ghd_fifth {
+            display: flex;
+            /* margin: 0 auto; */
+            justify-content: center;
+            font-size: x-small;
+            color: gray;
+            margin-top: 5px;
+        }
+
+        .last {
+            margin-top: 1px;
+        }
+
+        .jiantou {
+            width: 20px;
+            height: 20px;
+            /* border: solid black; */
+            position: absolute;
+            background-image: url(./111/小箭头.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: auto;
+            margin: 0 auto;
+            top: 800px;
+        }
+        .t01:hover {
+            text-decoration: underline;
+        }
+        .ghd_fourth:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ghd_first">
+        <div class="ghd_wechat_lead">
+            <a href="https://www.wechat.com/zh_TW/" class="ghd_jt">WeChat(繁体)&nbsp;&nbsp;|&nbsp;&nbsp;WeChat(EN)</a>
+        </div>
+
+        <div class="ghd_wechat_logo"></div>
+
+        <div class="ghd_line"></div>
+
+        <div class="list">
+            <div class="one">
+                <a href="https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&t=page/faq/win/390/index&faq=win_390"
+                    class="myList">微信8.0.33 for Windows正式版发布</a>
+                <a href="https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&t=page/faq/ios/8033/index&faq=ios_8033"
+                    class="myList">微信8.0.33 for IOS正式版发布</a>
+                <a href="https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&t=page/faq/android/8033/index&faq=android_8033"
+                    class="myList">微信8.0.33 for Android正式版发布</a>
+                <a href="https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&t=weixin_faq_list&head=true"
+                    class="myList">更多日志>></a>
+            </div>
+
+            <div class="space">
+
+            </div>
+
+            <div class="two">
+                <p class="date">02-07</p>
+                <p class="date">02-28</p>
+                <p class="date">02-23</p>
+                <p class="date plus">日期</p>
+            </div>
+
+
+        </div>
+
+        <div class="yuan">
+            <a href="#" class="inside i1"></a>
+            <a href="#" class="inside i2"></a>
+            <a href="#" class="inside i3"></a>
+            <a href="#" class="inside i4"></a>
+            <a href="#" class="inside i5"></a>
+        </div>
+
+        <div class="square">
+            <a href="#" class="in n1"></a>
+            <div class="blank"></div>
+            <a href="#" class="in n2"></a>
+        </div>
+
+        <div class="jiantou">
+
+        </div>
+    </div>
+
+    <div class="ghd_second">
+        <a href="https://pay.weixin.qq.com/index.php/core/home/login?return_url=%2F" class="part1 p01"></a>
+        <a href="https://mp.weixin.qq.com/" class="part1 p02"></a>
+        <a href="https://mp.weixin.qq.com/cgi-bin/wx" class="part1 p03"></a>
+        <a href="https://channels.weixin.qq.com/platform/login" class="part1 p04"></a>
+    </div>
+
+    <div class="ghd_second">
+        <a href="https://game.weixin.qq.com/cgi-bin/h5/static/minigame/creative/index.html" class="part1 p05"></a>
+        <a href="https://shop.weixin.qq.com/" class="part1 p06"></a>
+        <a href="https://sticker.weixin.qq.com/cgi-bin/mmemoticon-bin/loginpage?t=login/index" class="part1 p07"></a>
+        <a href="https://search.weixin.qq.com/" class="part1 p08"></a>
+    </div>
+
+    <div class="ghd_second">
+        <a href="https://cover.weixin.qq.com/cgi-bin/mmcover-bin/readtemplate?t=page/index#/" class="part1 p09"></a>
+        <a href="https://chatbot.weixin.qq.com/" class="part1 p10"></a>
+        <a href="https://developers.weixin.qq.com/community/develop/mixflow" class="part1 p11"></a>
+        <a href="https://fuwu.weixin.qq.com/" class="part1 p12"></a>
+    </div>
+
+    <div class="ghd_second">
+        <a href="https://work.weixin.qq.com/" class="part1 p13"></a>
+        <a href="https://developers.weixin.qq.com/community/business" class="part1 p14"></a>
+        <a href="https://wechat.design/tool/brand/" class="part1 p15"></a>
+        <a href="https://open.weixin.qq.com/" class="part1 p16"></a>
+    </div>
+
+    <div class="ghd_second">
+        <a href="https://iot.weixin.qq.com/" class="part1 p17"></a>
+        <a href="https://ad.weixin.qq.com/" class="part1 p18"></a>
+        <a href="https://developers.weixin.qq.com/doc/" class="part1 p19"></a>
+        <div class="part1 p20"></div>
+    </div>
+
+    <div class="ghd_third">
+        <div class="line1">
+            <a href="https://www.tencent.com/zh-cn/" class="t01">关于腾讯</a>
+            <p class="t01">|</p>
+            <a href="https://weixin110.qq.com/security/readtemplate?t=security_center_website/index&"
+                class="t01">微信安全</a>
+            <p class="t01">|</p>
+            <a href="https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&t=weixin_agreement&s=default"
+                class="t01">服务条款</a>
+            <p class="t01">|</p>
+            <a href="https://weixin.qq.com/cgi-bin/readtemplate?&t=page/agreement/personal_account&lang=zh_CN"
+                class="t01">使用规范</a>
+            <p class="t01">|</p>
+            <a href="https://kf.qq.com/product/weixin.html" class="t01">客服中心</a>
+            <p class="t01">|</p>
+            <a href="https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&t=weixin_agreement&s=privacy"
+                class="t01">隐私保护指引</a>
+        </div>
+    </div>
+
+    <div class="ghd_fourth">
+        <a href="https://beian.miit.gov.cn/#/Integrated/index" class="beian">备案号：粤B-20090059</a>
+    </div>
+
+    <div class="ghd_fifth">
+        <p class="last">Copyright © 1998-2023 Tencent All Rights Reserved.</p>
+    </div>
+</body>
+
+</html>
